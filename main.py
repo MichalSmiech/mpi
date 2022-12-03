@@ -4,9 +4,9 @@ import threading
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
-print("rc.thread_level", rc.thread_level)
-
-print("rc.threads", rc.threads)
+# print("rc.thread_level", rc.thread_level)
+#
+# print("rc.threads", rc.threads)
 
 def send():
     data = {'a': 7, 'b': 3.14}
