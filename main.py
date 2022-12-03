@@ -3,7 +3,7 @@ from mpi4py import MPI, rc
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
-print(rc.thread_level)
+print("rc.thread_level", rc.thread_level)
 
 if rank == 0:
     data = {'a': 7, 'b': 3.14}
